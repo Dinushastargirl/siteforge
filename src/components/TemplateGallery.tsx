@@ -1,38 +1,38 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Layout, ShieldCheck, Zap, ArrowRight } from 'lucide-react';
+import { Layout, ShieldCheck, Zap, ArrowRight, Wrench, Flame } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 
 const templates = [
   {
-    id: 'midnight',
-    name: 'The Midnight Pro',
-    theme: 'Premium Luxury',
+    id: 'plumber',
+    name: 'The Plumber Elite',
+    theme: 'Urgency & Local Authority',
     colors: ['#0a0a0a', '#b87333', '#FFFFFF'],
-    description: 'Designed for high-end residential luxury plumbing. Focus on elegance, authority, and premium pricing points.',
-    image: 'https://picsum.photos/seed/midnight/800/600',
-    icon: <ShieldCheck className="w-5 h-5" />,
+    description: 'A high-converting emergency blueprint for local plumbing heroes. Features instant click-to-call zones, dynamic area coverage maps, live Google reviews integration, and a sub-second mobile load speed designed for customer urgency.',
+    image: 'https://picsum.photos/seed/plumbing/800/600',
+    icon: <Wrench className="w-5 h-5" />,
     accent: '#b87333'
   },
   {
-    id: 'rapid',
-    name: 'The Rapid Response',
-    theme: 'Emergency & Trust',
-    colors: ['#FFFFFF', '#EF4444', '#1D4ED8'],
-    description: 'The ultimate blueprint for 24/7 emergency services. High-contrast CTA zones and trust badges drive immediate action.',
-    image: 'https://picsum.photos/seed/rapid/800/600',
+    id: 'electrician',
+    name: 'The Voltage Safety Pro',
+    theme: 'Safety, Tech & Flat-Rate Pricing',
+    colors: ['#050505', '#00f3ff', '#FFFFFF'],
+    description: 'Designed for premium electrical contractors. Built to showcase technical safety credentials, upfront flat-rate pricing matrices, live technician dispatch maps, and absolute compliance guarantee badges.',
+    image: 'https://picsum.photos/seed/electrician/800/600',
     icon: <Zap className="w-5 h-5" />,
-    accent: '#EF4444'
+    accent: '#00f3ff'
   },
   {
-    id: 'modern',
-    name: 'The Modern Green',
-    theme: 'Eco & Sustainability',
-    colors: ['#f5f5f0', '#166534', '#3fb950'],
-    description: 'Focus on water conservation and modern energy efficiency. Perfect for plumbing companies leading the green revolution.',
-    image: 'https://picsum.photos/seed/green/800/600',
-    icon: <Layout className="w-5 h-5" />,
-    accent: '#166534'
+    id: 'hvac',
+    name: 'The Climate Comfort HQ',
+    theme: 'Comfort, Rebates & Financing',
+    colors: ['#0a0a0a', '#F97316', '#FFFFFF'],
+    description: 'Built for residential heating & air conditioning market leaders. Focuses on seasonal HVAC tune-up schedules, instant state & federal energy rebate calculators, custom equipment financing blocks, and 24/7 dispatcher routing.',
+    image: 'https://picsum.photos/seed/hvac/800/600',
+    icon: <Flame className="w-5 h-5" />,
+    accent: '#F97316'
   }
 ];
 
